@@ -1,5 +1,6 @@
-print("Введите порядковый номер месяца " )
-month = int(input())
+print("Введите порядковый номер месяца ")
+user_input_number_of_month = int(input())
+
 
 def season(month):
     if month == 12 or month == 1 or month == 2:
@@ -11,4 +12,5 @@ def season(month):
     elif 9 <= month <= 11:
         return "autumn"
 
-print(season(month))
+
+print(season(user_input_number_of_month))

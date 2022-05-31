@@ -1,14 +1,20 @@
-sentence = input().lower().split(" ")
+user_data = input().lower().split(" ")
 
-def polindrome (sentence):
+
+def is_checking_palindrome(sentence):
+    """
+    Function is checking - is sentence palindrome ?
+    :param sentence:
+    :return: bool
+    """
 
     sentence = ''.join(sentence)
-    sentence = list(sentence)
     b = sentence[::-1]
 
     if sentence == b:
-        return ("True")
+        return True
     else:
-        return ("False")
+        return False
 
-print(polindrome(sentence))
+
+print(is_checking_palindrome(user_data))
